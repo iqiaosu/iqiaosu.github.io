@@ -30,14 +30,6 @@
 }
 
 
-/* 窄屏下头像稍微收小一点 */
-@media (max-width: 600px) {
-  .sidebar .author__avatar {
-    max-width: 320px !important;
-    margin-bottom: 1rem !important;
-  }
-}
-
 /* 作者简介字体 */
 .author__bio {
   font-size: 0.95rem;
