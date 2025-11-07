@@ -14,7 +14,7 @@
 }
 
 .sidebar .author__avatar img {
-  width: 200%;                 /* 图片宽度跟 sidebar 一样 */
+  width: 100%;                 /* 图片宽度跟 sidebar 一样 */
   height: auto;                /* 保持比例 */
   border-radius: 0;            /* 方形 */
   box-shadow: none;            /* 去阴影 */
@@ -95,4 +95,30 @@
   font-size: 0.85rem !important;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
+}
+
+/* === 强力覆盖：让侧栏头像在所有页面都充满 sidebar 宽度 === */
+.sidebar .author__avatar {
+  display: block !important;
+  width: 100% !important;          /* 覆盖主题可能的 100px 宽 */
+  max-width: none !important;       /* 取消上限 */
+  padding: 0 !important;            /* 主题常有 padding-right: 15px */
+  margin: 0 0 1.5rem 0 !important;
+  text-align: left;
+}
+.sidebar .author__avatar img,
+.sidebar .author__avatar .u-photo { /* 某些版本把 img 包在 .u-photo 上 */
+  display: block !important;
+  width: 100% !important;           /* 跟随容器 */
+  max-width: 100% !important;       /* 覆盖 max-width:100px 的限制 */
+  height: auto !important;
+  border-radius: 0 !important;      /* 方形 */
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 可选：在窄屏下略微收敛，避免头像过高 */
+@media (max-width: 600px) {
+  .sidebar .author__avatar { margin-bottom: 1rem !important; }
 }
