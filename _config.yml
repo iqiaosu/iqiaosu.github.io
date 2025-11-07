@@ -59,8 +59,11 @@ plugins:
 
 author:
   name   : "Qiao Su"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "See what AI and systems biology bring something for us."
+  avatar : "/assets/images/bio-photo.JPG"
+  bio    : "What stands in the way becomes the way. - Marcus Aurelius, Meditations"
+  email: "qiaosu.qs@gmail.com"
+  education: "🎓 BSBA CPU · MSc Chongqing · PhD Melbourne"
+  interests: "🚗 Road trip · 📘 Reading · 📸 Photography · 🏀 Basketball · 💃 Street dance bug · ♠ Board game · 🏄 Surfing rookie"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
