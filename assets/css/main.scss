@@ -4,121 +4,119 @@
 
 @import "minimal-mistakes";
 
-/* === 放大头像并解除所有容器限制 === */
+/* --------------------------------------------
+   ① 侧栏作者区：头像 + 个人信息
+-------------------------------------------- */
+
+/* 圆形头像 + 稍微小一点（保持美观比例） */
 .sidebar .author__avatar {
-  width: 100%;                 /* 让头像区域充满 sidebar */
-  max-width: 100% !important;  /* 移除主题的宽度上限 */
-  margin: 0 0 2rem 0;          /* 去掉左右空隙 */
-  text-align: left;
-  padding: 0;                  /* 移除内部空白 */
+  display: block !important;
+  width: 90% !important;           /* 比侧栏略留白 */
+  max-width: 240px !important;     /* 限制最大宽度，防止太大 */
+  margin: 0 auto 1.5rem auto !important; /* 居中并留出间距 */
+  padding: 0 !important;
+  text-align: center;
 }
 
-.sidebar .author__avatar img {
-  width: 100%;                 /* 图片宽度跟 sidebar 一样 */
-  height: auto;                /* 保持比例 */
-  border-radius: 0;            /* 方形 */
-  box-shadow: none;            /* 去阴影 */
+.sidebar .author__avatar img,
+.sidebar .author__avatar .u-photo {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 50% !important;   /* 圆形头像 */
+  box-shadow: none !important;     /* 去阴影 */
+  margin: 0 auto;
 }
 
-/* === 调整作者简介（bio）字体 === */
+/* 窄屏下头像稍微收小一点 */
+@media (max-width: 600px) {
+  .sidebar .author__avatar {
+    max-width: 180px !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* 作者简介字体 */
 .author__bio {
   font-size: 0.9rem;
   line-height: 1.6;
   color: #222;
 }
 
-/* ============== 1) 顶部导航字号调大（与首页大标题接近） ============== */
-/* 站点名（左上角 QSystems Biology） */
+/* --------------------------------------------
+   ② 导航栏样式
+-------------------------------------------- */
+
+/* 站点标题（左上角 QSystems Biology） */
 .site-title {
-  font-size: 1.25rem !important;   /* 可在 1.6–1.9rem 之间微调 */
+  font-size: 1.6rem !important;   /* 比默认略大 */
   line-height: 1.2;
 }
 
-/* 右侧菜单项（About / Highlights / Paper Radar） */
+/* 顶部菜单项（About / Highlights / Paper Radar） */
 .masthead__menu-item > a {
-  font-size: 1.1rem !important;   /* 与首页文章标题原字号接近 */
+  font-size: 1.15rem !important;
   line-height: 1.2;
 }
 
+/* --------------------------------------------
+   ③ 首页文章卡片标题
+-------------------------------------------- */
 
-/* ============== 3) 首页文章标题（如 “Welcome to Jekyll!”）变小 + 改色 ============== */
-/* 首页文章卡片标题 */
+/* 首页文章标题变小 + 改颜色 */
 .archive__item-title a {
-  font-size: 1rem !important;   /* 与 “Recent Posts” 视觉接近 */
+  font-size: 1.1rem !important;   /* 与 “Recent Posts” 接近 */
   line-height: 1.3;
-  color: #2a2c99 !important;       /* 指定颜色 */
+  color: #2a2c99 !important;
   text-decoration: none;
 }
 .archive__item-title a:hover,
 .archive__item-title a:focus {
-  color: #23265f !important;       /* 悬停/聚焦的更深色，可改 */
+  color: #23265f !important;
   text-decoration: underline;
 }
 
-/* “Recent Posts” 如果你还想再粗一点，可放开下行 */
-/* .page__title { font-weight: 700; } */
+/* --------------------------------------------
+   ④ 页面正文（About / Highlights / Paper Radar）
+-------------------------------------------- */
 
-/* === 页面正文整体字体调小（作用于 About / Highlights / Paper Radar 等）=== */
+/* 全局正文文字 */
 .page__content {
-  font-size: 0.9rem !important;   /* 默认约 1rem，调小 10% */
-  line-height: 1.7;               /* 行距舒适 */
-  color: #222;                    /* 柔和深灰色 */
+  font-size: 0.9rem !important;   /* 默认约 1rem → 略小 */
+  line-height: 1.7;
+  color: #222;
 }
 
-/* === 段落和列表细节微调 === */
+/* 段落和列表 */
 .page__content p,
 .page__content li {
-  font-size: 0.8rem !important;   /* 段落与列表字体保持一致 */
+  font-size: 0.9rem !important;
   line-height: 1.7;
-  margin-bottom: 0.6rem;          /* 缩短段落间距，视觉更紧凑 */
+  margin-bottom: 0.6rem;
 }
 
-/* === 列表符号和文字对齐优化 === */
+/* 列表缩进优化 */
 .page__content ul {
-  margin-left: 1.3rem;            /* 默认过大，略收紧 */
+  margin-left: 1.3rem;
 }
 
-/* === 页面标题和小标题适配（可选）=== */
+/* 页面主标题（如 About / Highlights） */
 .page__title {
-  font-size: 1rem !important;   /* About / Highlights 顶部标题略小 */
+  font-size: 1.5rem !important;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
 
+/* 二级标题（## Awards / Publications / Talks） */
 .page__content h2 {
-  font-size: 0.95rem !important;   /* Awards / Publications / Talks */
+  font-size: 1.1rem !important;
   margin-top: 1.2rem;
   margin-bottom: 0.4rem;
 }
 
+/* 三级标题（### ...） */
 .page__content h3 {
-  font-size: 0.85rem !important;
+  font-size: 1rem !important;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
-}
-
-/* === 强力覆盖：让侧栏头像在所有页面都充满 sidebar 宽度 === */
-.sidebar .author__avatar {
-  display: block !important;
-  width: 100% !important;          /* 覆盖主题可能的 100px 宽 */
-  max-width: none !important;       /* 取消上限 */
-  padding: 0 !important;            /* 主题常有 padding-right: 15px */
-  margin: 0 0 1.5rem 0 !important;
-  text-align: left;
-}
-.sidebar .author__avatar img,
-.sidebar .author__avatar .u-photo { /* 某些版本把 img 包在 .u-photo 上 */
-  display: block !important;
-  width: 100% !important;           /* 跟随容器 */
-  max-width: 100% !important;       /* 覆盖 max-width:100px 的限制 */
-  height: auto !important;
-  border-radius: 0 !important;      /* 方形 */
-  box-shadow: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* 可选：在窄屏下略微收敛，避免头像过高 */
-@media (max-width: 600px) {
-  .sidebar .author__avatar { margin-bottom: 1rem !important; }
 }
