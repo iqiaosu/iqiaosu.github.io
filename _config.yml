@@ -60,17 +60,9 @@ plugins:
 author:
   name   : "Qiao Su"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "BSBA CPU, MSc Chongqing, PhD Melbourne"
+  bio    : "BSBA CPU, MSc Chongqing, PhD Melbourne <br><br><br>🚗 Road trip 📘 Reading <br>📸 Photography 🏀 Basketball <br>💃 Street dance bug ♠ Board game <br>🏄 Surfing rookie"
   email: "qiaosu.qs@gmail.com"
   links:
-  - label: "🚗 Road trip  📘 Reading "
-
-  - label: "📸 Photography 🏀 Basketball"
-
-  - label: "💃 Street dance bug ♠ Board game "
-
-  - label: "🏄 Surfing rookie"
-
   - label: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/iqiaosu"
