@@ -6,10 +6,10 @@
 
 /* === 放大头像并解除所有容器限制 === */
 .sidebar .author__avatar {
-  width: 200%;                 /* 让头像区域充满 sidebar */
-  max-width: 300% !important;  /* 移除主题的宽度上限 */
+  width: 100%;                 /* 让头像区域充满 sidebar */
+  max-width: 100% !important;  /* 移除主题的宽度上限 */
   margin: 0 0 2rem 0;          /* 去掉左右空隙 */
-  text-align: center;
+  text-align: left;
   padding: 0;                  /* 移除内部空白 */
 }
 
