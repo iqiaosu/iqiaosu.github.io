@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter
+---
+
+@import "minimal-mistakes";
+
+/* === Custom overrides === */
+
+/* 去掉圆框 + 放大头像 */
+.author__avatar img {
+  border-radius: 0;   /* 去掉圆角 */
+  width: 160px;       /* 放大 */
+  height: auto;
+  box-shadow: none;   /* 去掉阴影 */
+}
+
+/* 可选：让头像和文字之间留一点空隙 */
+.author__avatar {
+  margin-bottom: 1.5rem;
+}
