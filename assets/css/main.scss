@@ -11,7 +11,7 @@
 /* 圆形头像 + 稍微小一点（保持美观比例） */
 .sidebar .author__avatar {
   display: block !important;
-  width: 90% !important;           /* 比侧栏略留白 */
+  width: 100% !important;           /* 比侧栏略留白 */
   max-width: 240px !important;     /* 限制最大宽度，防止太大 */
   margin: 0 auto 1.5rem auto !important; /* 居中并留出间距 */
   padding: 0 !important;
@@ -31,7 +31,7 @@
 /* 窄屏下头像稍微收小一点 */
 @media (max-width: 600px) {
   .sidebar .author__avatar {
-    max-width: 180px !important;
+    max-width: 240px !important;
     margin-bottom: 1rem !important;
   }
 }
@@ -49,13 +49,13 @@
 
 /* 站点标题（左上角 QSystems Biology） */
 .site-title {
-  font-size: 1.6rem !important;   /* 比默认略大 */
+  font-size: 1.25rem !important;   /* 比默认略大 */
   line-height: 1.2;
 }
 
 /* 顶部菜单项（About / Highlights / Paper Radar） */
 .masthead__menu-item > a {
-  font-size: 1.15rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.2;
 }
 
@@ -65,7 +65,7 @@
 
 /* 首页文章标题变小 + 改颜色 */
 .archive__item-title a {
-  font-size: 1.1rem !important;   /* 与 “Recent Posts” 接近 */
+  font-size: 1rem !important;   /* 与 “Recent Posts” 接近 */
   line-height: 1.3;
   color: #2a2c99 !important;
   text-decoration: none;
@@ -82,7 +82,7 @@
 
 /* 全局正文文字 */
 .page__content {
-  font-size: 0.9rem !important;   /* 默认约 1rem → 略小 */
+  font-size: 0.85rem !important;   /* 默认约 1rem → 略小 */
   line-height: 1.7;
   color: #222;
 }
@@ -90,7 +90,7 @@
 /* 段落和列表 */
 .page__content p,
 .page__content li {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
   line-height: 1.7;
   margin-bottom: 0.6rem;
 }
@@ -102,21 +102,21 @@
 
 /* 页面主标题（如 About / Highlights） */
 .page__title {
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
 
 /* 二级标题（## Awards / Publications / Talks） */
 .page__content h2 {
-  font-size: 1.1rem !important;
+  font-size: 0.9rem !important;
   margin-top: 1.2rem;
   margin-bottom: 0.4rem;
 }
 
 /* 三级标题（### ...） */
 .page__content h3 {
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
 }
