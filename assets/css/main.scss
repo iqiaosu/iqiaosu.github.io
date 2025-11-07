@@ -4,29 +4,25 @@
 
 @import "minimal-mistakes";
 
-/* === Custom overrides === */
-
-/* === 放大头像并解除容器限制 === */
-.author__avatar {
-  max-width: none !important; /* 取消最大宽度限制 */
-  width: 280px;               /* 设定容器宽度 */
-  margin: 0 auto 1.5rem;      /* 居中并留间距 */
-  margin-bottom: 2rem;
+/* === 放大头像并解除所有容器限制 === */
+.sidebar .author__avatar {
+  width: 100%;                 /* 让头像区域充满 sidebar */
+  max-width: 100% !important;  /* 移除主题的宽度上限 */
+  margin: 0 0 2rem 0;          /* 去掉左右空隙 */
   text-align: center;
+  padding: 0;                  /* 移除内部空白 */
 }
 
-.author__avatar img {
-  border-radius: 0;     /* 方形 */
-  width: 100%;          /* 填满容器宽度 */
-  height: auto;         /* 自动等比缩放 */
-  box-shadow: none;
+.sidebar .author__avatar img {
+  width: 100%;                 /* 图片宽度跟 sidebar 一样 */
+  height: auto;                /* 保持比例 */
+  border-radius: 0;            /* 方形 */
+  box-shadow: none;            /* 去阴影 */
 }
 
-
-/* 2️⃣ 调整作者简介（bio）字体大小 */
+/* === 调整作者简介（bio）字体 === */
 .author__bio {
-  font-size: 0.8rem;   /* 默认约 1rem → 略小 */
+  font-size: 0.8rem;
   line-height: 1.5;
-  color: #222;         /* 稍微柔和的深灰色 */
+  color: #222;
 }
-
