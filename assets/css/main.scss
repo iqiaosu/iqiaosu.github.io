@@ -9,8 +9,8 @@
 /* 1️⃣ 放大头像 + 去掉圆角 */
 .author__avatar img {
   border-radius: 0;     /* 方形 */
-  width: 280px;         /* 放大为原来的约 2 倍 */
-  height: auto;
+  width: 360px;         /* 放大为原来的约 2 倍 */
+  height: 360px;
   box-shadow: none;
 }
 
@@ -22,7 +22,7 @@
 
 /* 2️⃣ 调整作者简介（bio）字体大小 */
 .author__bio {
-  font-size: 0.9rem;   /* 默认约 1rem → 略小 */
+  font-size: 0.6rem;   /* 默认约 1rem → 略小 */
   line-height: 1.5;
   color: #222;         /* 稍微柔和的深灰色 */
 }
