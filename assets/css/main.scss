@@ -6,23 +6,26 @@
 
 /* === Custom overrides === */
 
-/* 1️⃣ 放大头像 + 去掉圆角 */
+/* === 放大头像并解除容器限制 === */
+.author__avatar {
+  max-width: none !important; /* 取消最大宽度限制 */
+  width: 280px;               /* 设定容器宽度 */
+  margin: 0 auto 1.5rem;      /* 居中并留间距 */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .author__avatar img {
   border-radius: 0;     /* 方形 */
-  width: 360px;         /* 放大为原来的约 2 倍 */
-  height: 360px;
+  width: 100%;          /* 填满容器宽度 */
+  height: auto;         /* 自动等比缩放 */
   box-shadow: none;
 }
 
-.author__avatar {
-  max-width: none !important; /* 移除容器的限制 */
-  margin-bottom: 1.5rem;
-  text-align: center;         /* 可选，让头像居中 */
-}
 
 /* 2️⃣ 调整作者简介（bio）字体大小 */
 .author__bio {
-  font-size: 0.6rem;   /* 默认约 1rem → 略小 */
+  font-size: 0.8rem;   /* 默认约 1rem → 略小 */
   line-height: 1.5;
   color: #222;         /* 稍微柔和的深灰色 */
 }
