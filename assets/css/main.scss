@@ -58,46 +58,41 @@
 /* “Recent Posts” 如果你还想再粗一点，可放开下行 */
 /* .page__title { font-weight: 700; } */
 
-/* === 页面正文整体字体缩小，使 About / Highlights / Paper Radar 更协调 === */
+/* === 页面正文整体字体调小（作用于 About / Highlights / Paper Radar 等）=== */
 .page__content {
-  font-size: 0.95rem;     /* 默认约 1rem → 略小 */
-  line-height: 1.65;      /* 保持良好可读性 */
-  color: #222;
+  font-size: 0.9rem !important;   /* 默认约 1rem，调小 10% */
+  line-height: 1.7;               /* 行距舒适 */
+  color: #222;                    /* 柔和深灰色 */
 }
 
-/* 段落间距略收紧（可选） */
-.page__content p {
-  margin-bottom: 0.8rem;
-}
-
-/* === 页面主标题（如 “Highlights” / “About”）略微调小 === */
-.page__title {
-  font-size: 1rem;     /* 默认 2rem 左右 → 略小 */
-  line-height: 1.3;
-  margin-bottom: 1.2rem;
-}
-
-/* 二级标题（## Awards / ## Publications / ## Talks）略调小 */
-.page__content h2 {
-  font-size: 0.95rem;     /* 默认 1.5rem 左右 */
-  line-height: 1.3;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* 三级标题（### ...）再小一点 */
-.page__content h3 {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-/* 列表行距微调 */
+/* === 段落和列表细节微调 === */
+.page__content p,
 .page__content li {
+  font-size: 0.8rem !important;   /* 段落与列表字体保持一致 */
+  line-height: 1.7;
+  margin-bottom: 0.6rem;          /* 缩短段落间距，视觉更紧凑 */
+}
+
+/* === 列表符号和文字对齐优化 === */
+.page__content ul {
+  margin-left: 1.3rem;            /* 默认过大，略收紧 */
+}
+
+/* === 页面标题和小标题适配（可选）=== */
+.page__title {
+  font-size: 1rem !important;   /* About / Highlights 顶部标题略小 */
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.page__content h2 {
+  font-size: 0.95rem !important;   /* Awards / Publications / Talks */
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.page__content h3 {
+  font-size: 0.85rem !important;
+  margin-top: 1rem;
   margin-bottom: 0.3rem;
 }
-
-/* === 让主页 Recent Posts 保持当前样式，不受上面影响 === */
-.home .page__content {
-  font-size: 1rem;    /* 恢复默认大小 */
-}
-
