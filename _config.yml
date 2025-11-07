@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Qiao Su"
-  avatar : "/assets/images/bio-photo.JPG"
+  avatar : "/assets/images/bio-photo.jpg"
   bio    : "BSBA CPU, MSc Chongqing, PhD Melbourne"
   email: "qiaosu.qs@gmail.com"
   links:
