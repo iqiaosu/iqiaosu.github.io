@@ -114,3 +114,31 @@
   margin-top: 1rem;
   margin-bottom: 0.3rem;
 }
+
+/* === Sidebar 头像：强力铺满 + 圆形 + 去白边 === */
+.sidebar .author__avatar,
+.sidebar .author__avatar a,
+.sidebar .author__avatar img,
+.sidebar .author__avatar .u-photo {
+  display: block !important;
+  width: 100% !important;          /* 不再被 100px 压回去 */
+  max-width: none !important;       /* 取消任何 max-width 上限 */
+  height: auto !important;
+  margin: 0 auto 1.25rem auto !important;
+  padding: 0 !important;
+  box-shadow: none !important;      /* 去掉主题默认白边阴影 */
+  border: 0 !important;             /* 有些版本用 border 画白框 */
+}
+
+.sidebar .author__avatar img,
+.sidebar .author__avatar .u-photo {
+  aspect-ratio: 1 / 1 !important;   /* 强制正方形 */
+  object-fit: cover !important;     /* 居中裁剪 */
+  border-radius: 50% !important;    /* 圆形 */
+}
+
+/* 如果想稍微留白（不是完全贴边），解除上面 100% 宽度并用下面两行： */
+/*
+.sidebar .author__avatar { width: 95% !important; }
+.sidebar .author__avatar a { width: 100% !important; }
+*/
