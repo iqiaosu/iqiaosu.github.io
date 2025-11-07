@@ -60,24 +60,25 @@ plugins:
 author:
   name   : "Qiao Su"
   avatar : "/assets/images/bio-photo.JPG"
-  bio    : "What stands in the way becomes the way. - Marcus Aurelius, Meditations"
+  bio    : "BSBA CPU, MSc Chongqing, PhD Melbourne"
   email: "qiaosu.qs@gmail.com"
   links:
-  - label: "🎓 BSBA CPU · MSc Chongqing · PhD Melbourne"
-    icon: "fas fa-graduation-cap"
+  - label: "🚗 Road trip  📘 Reading "
+    icon: ""
     url: "#"
-  - label: "🚗 Road trip · 📘 Reading · 📸 Photography · 🏀 Basketball"
-    icon: "fas fa-heart"
+  - label: "📸 Photography 🏀 Basketball"
+    icon: ""
     url: "#"
-  - label: "💃 Street dance bug · ♠ Board game · 🏄 Surfing rookie"
-    icon: "fas fa-star"
+  - label: "💃 Street dance bug ♠ Board game "
+    icon: ""
+    url: "#"
+  - label: "🏄 Surfing rookie"
+    icon: ""
     url: "#"
   - label: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/iqiaosu"
-  - label: "Email"
-    icon: "fas fa-envelope"
-    url: "mailto:qiaosu.qs@gmail.com"
+
 
 footer:
   links:
