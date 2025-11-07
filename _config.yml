@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Qiao Su"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "BSBA CPU, MSc Chongqing, PhD Melbourne <br><br>🚗 Road trip <br>📘 Reading <br>📸 Photography <br>🏀 Basketball <br>💃 Street dance bug <br>♠ Board game <br>🏄 Surfing rookie"
+  bio    : "BSBA *CPU*, MSc *Chongqing*, PhD *Melbourne* <br><br>🚗 Road trip <br>📘 Reading <br>📸 Photography <br>🏀 Basketball <br>💃 Street dance bug <br>♠ Board game <br>🏄 Surfing rookie"
   email: "qiaosu.qs@gmail.com"
   links:
   - label: "GitHub"
