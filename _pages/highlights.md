@@ -1,8 +1,12 @@
 ---
 title: "Highlights"
 permalink: /highlights/
-# layout 和 author_profile 已由 defaults 自动设好
+layout: single
+author_profile: false
+sidebar: false
+classes: wide
 ---
+
 
 ## 🏆 Awards
 - 2025 — ABC Best Paper Award（第一作者）
