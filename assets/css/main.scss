@@ -8,38 +8,40 @@
    ① 侧栏作者区：头像 + 个人信息
 -------------------------------------------- */
 
-/* 圆形头像 + 稍微小一点（保持美观比例） */
+/* 圆形头像：略小于 sidebar，留点边距 */
 .sidebar .author__avatar {
   display: block !important;
-  width: 100% !important;           /* 比侧栏略留白 */
-  max-width: 240px !important;     /* 限制最大宽度，防止太大 */
-  margin: 0 auto 1.5rem auto !important; /* 居中并留出间距 */
+  width: 95% !important;
+  max-width: 320px !important;          /* 想更小改成 280/300 */
+  margin: 0 auto 1.5rem auto !important;
   padding: 0 !important;
   text-align: center;
 }
-
 .sidebar .author__avatar img,
 .sidebar .author__avatar .u-photo {
   display: block !important;
   width: 100% !important;
   height: auto !important;
-  border-radius: 50% !important;   /* 圆形头像 */
-  box-shadow: none !important;     /* 去阴影 */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50% !important;
+  box-shadow: none !important;
   margin: 0 auto;
 }
+
 
 /* 窄屏下头像稍微收小一点 */
 @media (max-width: 600px) {
   .sidebar .author__avatar {
-    max-width: 240px !important;
+    max-width: 320px !important;
     margin-bottom: 1rem !important;
   }
 }
 
 /* 作者简介字体 */
 .author__bio {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: #222;
 }
 
