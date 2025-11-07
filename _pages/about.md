@@ -12,16 +12,28 @@ From Tibet Plateau of China. Tasted flavour of pharmaceutical marketing principl
  
 Experienced in microbial and parasitic disease research using transcriptomics, proteomics, and metabolomics. Trained in both wet and dry labs. Skilled in multi-omics library prep and self-taught in R-based data analysis. Known for efficient, high-success experiments. Strong in data interpretation—value deep reading, peer discussion, and insights from field leaders. Adaptive, independent, and able to manage full workflows from sample to insight.
 
+<br>
+
 ### FUNDINGS
-**Walter and Eliza Hall Research Institute, 2022, Australia |** Edith Moffatt student travel scholarships
-**Australian Society for Parasitology, 2021 & 2022, Australia |** Student travel scholarship, respectively
-**The University of Melbourne, 2018, Australia |** Melbourne Research Scholarship
-**Chongqing University, 2015, China |** Excellent Officer Award for Graduate Student Union
+
+&emsp;&emsp;**Walter and Eliza Hall Research Institute, 2022, Australia |** Edith Moffatt student travel scholarships
+
+&emsp;&emsp;**Australian Society for Parasitology, 2021 & 2022, Australia |** Student travel scholarship, respectively
+
+&emsp;&emsp;**The University of Melbourne, 2018, Australia |** Melbourne Research Scholarship
+
+&emsp;&emsp;**Chongqing University, 2015, China |** Excellent Officer Award for Graduate Student Union
+
+
+<br>
 
 ### INVITED CONFERENCE PRESENTATIONS
-**15th International Congress of Parasitology (ICOPA), 2022, Denmark |** Exploring albendazole resistance of human diarrheal parasite Giardia duodenalis.
-**Parasitravaganza ASP Annual Conference, 2022, Australia |** In vitro selection of Giardia duodenalis for Albendazole resistance identifies a β-tubulin mutation at amino acid E198K.
-**5th National Conference of Pharmaceutical Analysis, 2015, China|** Pharmacometabolomic identifies siderophores as novel targets for therapeutic discovery.
+
+&emsp;&emsp;**15th International Congress of Parasitology (ICOPA), 2022, Denmark |** Exploring albendazole resistance of human diarrheal parasite Giardia duodenalis.
+
+&emsp;&emsp;**Parasitravaganza ASP Annual Conference, 2022, Australia |** In vitro selection of Giardia duodenalis for Albendazole resistance identifies a β-tubulin mutation at amino acid E198K.
+
+&emsp;&emsp;**5th National Conference of Pharmaceutical Analysis, 2015, China|** Pharmacometabolomic identifies siderophores as novel targets for therapeutic discovery.
 
 
 
