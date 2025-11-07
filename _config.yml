@@ -64,17 +64,13 @@ author:
   email: "qiaosu.qs@gmail.com"
   links:
   - label: "🚗 Road trip  📘 Reading "
-    icon: ""
-    url: "#"
+
   - label: "📸 Photography 🏀 Basketball"
-    icon: ""
-    url: "#"
+
   - label: "💃 Street dance bug ♠ Board game "
-    icon: ""
-    url: "#"
+
   - label: "🏄 Surfing rookie"
-    icon: ""
-    url: "#"
+
   - label: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/iqiaosu"
