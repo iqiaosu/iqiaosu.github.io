@@ -1,8 +1,27 @@
 ---
-permalink: /about/
 title: "About"
+permalink: /about/
+layout: single
+author_profile: false   # 关闭侧栏
+sidebar: false          # 明确无侧栏（双保险）
+classes: wide           # 内容区域拉满
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+From Tibet Plateau of China. Tasted flavour of pharmaceutical marketing principles then head down to pharmaceutical research to get enough knowledge of the products (mediconsider systems biology as a promising era of disease treatment. Fascinated with understanding basic biology and cine). Respect to drug development and exploring mechanisms of the disease. Years of research experience in microbial/parasitic diseases using omics technologies (transcriptomic, proteomic, metabolomics).
+ 
+Experienced in microbial and parasitic disease research using transcriptomics, proteomics, and metabolomics. Trained in both wet and dry labs. Skilled in multi-omics library prep and self-taught in R-based data analysis. Known for efficient, high-success experiments. Strong in data interpretation—value deep reading, peer discussion, and insights from field leaders. Adaptive, independent, and able to manage full workflows from sample to insight.
+
+### FUNDINGS
+**Walter and Eliza Hall Research Institute, 2022, Australia |** Edith Moffatt student travel scholarships
+**Australian Society for Parasitology, 2021 & 2022, Australia |** Student travel scholarship, respectively
+**The University of Melbourne, 2018, Australia |** Melbourne Research Scholarship
+**Chongqing University, 2015, China |** Excellent Officer Award for Graduate Student Union
+
+### INVITED CONFERENCE PRESENTATIONS
+**15th International Congress of Parasitology (ICOPA), 2022, Denmark |** Exploring albendazole resistance of human diarrheal parasite Giardia duodenalis.
+**Parasitravaganza ASP Annual Conference, 2022, Australia |** In vitro selection of Giardia duodenalis for Albendazole resistance identifies a β-tubulin mutation at amino acid E198K.
+**5th National Conference of Pharmaceutical Analysis, 2015, China|** Pharmacometabolomic identifies siderophores as novel targets for therapeutic discovery.
+
+
+
