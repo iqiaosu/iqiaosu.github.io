@@ -10,32 +10,28 @@
 </div>
 
 <style>
-/* ---- Global PDF Viewer Styles ---- */
+/* ---- Clean PDF Viewer Styles ---- */
 .pdf-frame {
   width: 100%;
   max-width: 1200px;
   margin: 1.5rem auto;
-  border-radius: 12px;
+  border: none;
+  border-radius: 0;          /* 去掉圆角 */
   overflow: hidden;
-  background: #f9fafb;
-  box-shadow: 0 8px 28px rgba(0,0,0,.08);
-  padding: 0.5rem;
+  background: transparent;   /* ✅ 去掉灰色背景 */
+  box-shadow: none;          /* ✅ 去掉阴影 */
+  padding: 0;
 }
 
 .pdf-frame iframe {
   width: 100%;
-  height: 85vh;          /* 保证不裁切 */
+  height: 85vh;
   border: none;
   display: block;
-  border-radius: 12px;
-  background: #fff;
+  background: transparent;   /* ✅ 让背景完全透明 */
 }
 
 @media (max-width: 768px) {
-  .pdf-frame {
-    margin: 1rem auto;
-    border-radius: 8px;
-  }
   .pdf-frame iframe {
     height: 95vh;
   }
