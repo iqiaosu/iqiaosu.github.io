@@ -3,9 +3,9 @@
 ---
 
 /* 先覆盖主题变量（一定要在 @import 之前） */
-$left-sidebar-width: 360px;        /* 侧栏更宽一点，可调 320–380 */
+$left-sidebar-width: 320px;        /* 侧栏更宽一点，可调 320–380 */
 $right-sidebar-width: 360px;
-$gutter: 3rem;                     /* 关键：内容与侧栏之间的“缝隙” */
+$gutter: 6rem;                     /* 关键：内容与侧栏之间的“缝隙” */
 
 
 
