@@ -3,7 +3,7 @@ name: Build and Deploy Jekyll site
 on:
   push:
     branches:
-      - main  # 或 master，根据你的仓库默认分支
+      - main
   workflow_dispatch:
 
 jobs:
@@ -20,12 +20,10 @@ jobs:
           bundler-cache: true
 
       - name: Install dependencies
-        run: |
-          bundle install
+        run: bundle install
 
       - name: Build site
-        run: |
-          bundle exec jekyll build
+        run: bundle exec jekyll build
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
