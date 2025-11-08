@@ -66,6 +66,6 @@ tag_archive:
   type: liquid
   path: /tags/
 
-  header:
+header:
   nav: []   # 清空顶部导航
 
