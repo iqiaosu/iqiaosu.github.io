@@ -1,10 +1,7 @@
 ---
 title: "About"
 permalink: /about/
-layout: single
-author_profile: false   # 关闭侧栏
-sidebar: false          # 明确无侧栏（双保险）
-classes: wide           # 内容区域拉满
+# layout 和 sidebar.nav 不用写，已在 defaults 中全站生效
 ---
 
 
