@@ -1,6 +1,6 @@
-- image: /images/paper1.jpg
-  caption: "My paper on Giardia transcriptomics"
-- image: /images/conference.jpg
-  caption: "ISMB Poster"
-- image: /images/lab.jpg
-  caption: "Lab snapshots"
+- image: /assets/images/bio-photo.jpg
+  caption: "Profile"
+- image: /assets/images/bio-photo.jpg
+  caption: "Paper 1 (placeholder)"
+- image: /assets/images/bio-photo.jpg
+  caption: "Conference (placeholder)"
