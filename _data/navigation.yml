@@ -1,20 +1,20 @@
 sidebar:
-  - title: "Home"
+  - title: "HOME"
     url: /
-  - title: "About"
-    url: /about/
+
+  - title: "ABOUT"
     children:
       - title: "Bio"
         url: /about/bio/
-  - title: "Project"
-    url: /projects/
+
+  - title: "PROJECT"
     children:
       - title: "Project A"
         url: /projects/project-a/
       - title: "Project B"
         url: /projects/project-b/
-  - title: "Highlights"
-    url: /highlights/
+
+  - title: "HIGHLIGHTS"
     children:
       - title: "Fundings"
         url: /highlights/fundings/
@@ -22,8 +22,8 @@ sidebar:
         url: /highlights/awards/
       - title: "Conferences"
         url: /highlights/conferences/
-  - title: "Radar"
-    url: /radar/
+
+  - title: "RADAR"
     children:
       - title: "Literature"
         url: /radar/literature/
