@@ -142,3 +142,29 @@
 .sidebar .author__avatar { width: 95% !important; }
 .sidebar .author__avatar a { width: 100% !important; }
 */
+
+/* --------------------------------------------
+   侧栏与右侧内容“拉开距离”（仅桌面端）
+   适配 Minimal Mistakes 的常见页面类型
+-------------------------------------------- */
+@media (min-width: 992px) {
+  /* 首页、归档页、文章/页面（单页）布局的侧栏 */
+  .layout--home .sidebar,
+  .layout--archive .sidebar,
+  .layout--single .sidebar,
+  .layout--pages .sidebar {
+    margin-right: 36px !important;   /* 想更宽改 40/48px */
+  }
+
+  /* 保险起见：确保侧栏不被主题宽度限制“顶住” */
+  .sidebar {
+    max-width: 360px;                /* 可按需调 300–360px */
+  }
+}
+
+/* 移动端回落为单栏：不留空隙，避免挤压正文 */
+@media (max-width: 991.98px) {
+  .sidebar {
+    margin-right: 0 !important;
+  }
+}
