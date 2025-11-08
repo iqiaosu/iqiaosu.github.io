@@ -1,5 +1,5 @@
 ---
-title: "Awards"
+title: "AWARDS AND PRIZES"
 permalink: /highlights/awards/
 ---
 - **Parasitravaganza ASP Annual Conference**, Australia, 2022  
