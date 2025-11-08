@@ -62,5 +62,8 @@ tag_archive:
 header:
   nav: []   # 清空顶部导航
 
+# 自定义样式加载
+head_scripts:
+  - /_includes/custom-style.html
 
 
