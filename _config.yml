@@ -50,12 +50,14 @@ include:
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-remote-theme   # ← 加上这行
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
 
 author:
   name   : "Qiao Su"
