@@ -1,11 +1,8 @@
 ---
 title: "Highlights"
 permalink: /highlights/
-layout: single
-author_profile: false
-sidebar: false
-classes: wide
 ---
+
 
 
 ## 🏆 Awards
