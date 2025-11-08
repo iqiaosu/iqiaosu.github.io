@@ -20,7 +20,9 @@ jobs:
           bundler-cache: true
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          bundle update sass-embedded
+          bundle install
 
       - name: Build site
         run: bundle exec jekyll build
