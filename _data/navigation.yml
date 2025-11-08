@@ -7,7 +7,7 @@ sidebar:
       - title: "Bio"
         url: /about/bio/
       - title: "Skill Sets"
-        url: /about/skill-set/
+        url: /about/skill-sets/
 
   - title: "PROJECT"
     children:
