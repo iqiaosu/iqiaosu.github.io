@@ -21,8 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bundle update sass-embedded
+          bundle lock --update sass-embedded
           bundle install
+
 
       - name: Build site
         run: bundle exec jekyll build
