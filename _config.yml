@@ -65,3 +65,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+  header:
+  nav: []   # 清空顶部导航
+
