@@ -163,8 +163,16 @@
   }
 }
 
-/* hide top-right masthead menu entirely */
-.masthead__menu,
-.masthead__menu-item {
+/* Hide only the top-right navigation menu, keep site title visible */
+.masthead__menu {
   display: none !important;
 }
+
+/* Ensure site title (left side) remains visible */
+.site-title,
+.masthead__inner-wrap .site-title {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
