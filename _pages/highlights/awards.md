@@ -2,17 +2,17 @@
 title: "AWARDS AND PRIZES"
 permalink: /highlights/awards/
 ---
-- **Parasitravaganza ASP Annual Conference**, Australia, 2022  
+**Parasitravaganza ASP Annual Conference**, Australia, 2022  
   🐳 *Winner of Best 5-Minute Talk Prize*
 
-- **25th Annual Lorne Proteomics Symposium**, Australia, 2019  
+**25th Annual Lorne Proteomics Symposium**, Australia, 2019  
   🍦 *Student Poster Award*
 
-- **Bioanalysis Zone and Waters Corporation**, United Kingdom, 2016  
+**Bioanalysis Zone and Waters Corporation**, United Kingdom, 2016  
   😳 *Successful Nominee of Young Scientist Award*
 
-- **The 2nd National Meeting of Mass Spectrometry Analysis**, China, 2015  
+**The 2nd National Meeting of Mass Spectrometry Analysis**, China, 2015  
   ❄️ *Best Poster Award*
 
-- **5th National Conference of Pharmaceutical Analysis**, China, 2015  
+**5th National Conference of Pharmaceutical Analysis**, China, 2015  
   🌳 *Excellent Prize for the Best Conference Papers*
