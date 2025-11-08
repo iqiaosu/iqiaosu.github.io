@@ -50,16 +50,8 @@ defaults:
       comments: false
       share: false
       related: false
-
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: false
       sidebar:
-        nav: "sidebar"
-        expand: true
+        nav: "sidebar"   # ✅ 让文章也用左侧的同一套导航
 
 category_archive:
   type: liquid
