@@ -17,7 +17,7 @@ sidebar:
     url: /highlights/
     children:
       - title: "Fundings"
-        url: /highlights/Fundings/
+        url: /highlights/fundings/
       - title: "Awards"
         url: /highlights/awards/
       - title: "Conferences"
