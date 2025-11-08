@@ -32,10 +32,14 @@ jobs:
           gem update --system
           bundle install
 
+      - name: Clean Jekyll cache
+        run: bundle exec jekyll clean
+
       - name: Build site
         run: |
           bundle exec jekyll build
           echo "✅ Jekyll build completed successfully."
+
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
