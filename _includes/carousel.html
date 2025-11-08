@@ -1,0 +1,68 @@
+{% assign slides = site.data.carousel | default: [] %}
+<div class="qs-carousel" role="region" aria-label="Featured images">
+  <div class="qs-carousel__viewport">
+    {% for s in slides %}
+    <figure class="qs-slide" {% if forloop.first %}data-active{% endif %}>
+      <img src="{{ s.image | relative_url }}" alt="{{ s.caption | escape }}" loading="lazy">
+      {% if s.caption %}
+      <figcaption class="qs-caption">{{ s.caption }}</figcaption>
+      {% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+
+  <button class="qs-nav qs-prev" aria-label="Previous">&#10094;</button>
+  <button class="qs-nav qs-next" aria-label="Next">&#10095;</button>
+
+  <div class="qs-dots">
+    {% for s in slides %}
+    <button class="qs-dot {% if forloop.first %}is-active{% endif %}" aria-label="Go to slide {{ forloop.index }}"></button>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.qs-carousel{position:relative;max-width:960px;margin:0 auto 1.25rem auto}
+.qs-carousel__viewport{position:relative;overflow:hidden;border-radius:.5rem}
+.qs-slide{position:absolute;inset:0;opacity:0;transition:opacity .5s ease}
+.qs-slide[data-active]{opacity:1;position:relative}
+.qs-slide img{display:block;width:100%;height:auto;object-fit:cover}
+.qs-caption{position:absolute;left:.75rem;bottom:.75rem;background:rgba(0,0,0,.55);color:#fff;
+  padding:.35rem .55rem;border-radius:.35rem;font-size:.85rem}
+.qs-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);
+  border:0;color:#fff;font-size:1.25rem;line-height:1;padding:.5rem .6rem;border-radius:.4rem;cursor:pointer}
+.qs-prev{left:.5rem}.qs-next{right:.5rem}
+.qs-dots{display:flex;gap:.4rem;justify-content:center;margin-top:.5rem}
+.qs-dot{width:.5rem;height:.5rem;border-radius:50%;border:0;background:#bbb;cursor:pointer}
+.qs-dot.is-active{background:#333}
+</style>
+
+<script>
+(function(){
+  const root = document.currentScript.previousElementSibling.previousElementSibling; // <div.qs-carousel>
+  const viewport = root.querySelector('.qs-carousel__viewport');
+  const slides = Array.from(viewport.querySelectorAll('.qs-slide'));
+  const prev = root.querySelector('.qs-prev');
+  const next = root.querySelector('.qs-next');
+  const dots = Array.from(root.querySelectorAll('.qs-dot'));
+  let idx = slides.findIndex(s=>s.hasAttribute('data-active'));
+  if (idx < 0) idx = 0;
+
+  function show(i){
+    slides[idx].removeAttribute('data-active');
+    dots[idx]?.classList.remove('is-active');
+    idx = (i + slides.length) % slides.length;
+    slides[idx].setAttribute('data-active','');
+    dots[idx]?.classList.add('is-active');
+  }
+
+  prev.addEventListener('click', ()=>show(idx-1));
+  next.addEventListener('click', ()=>show(idx+1));
+  dots.forEach((d,i)=>d.addEventListener('click', ()=>show(i)));
+
+  // auto play
+  let timer = setInterval(()=>show(idx+1), 4000);
+  root.addEventListener('mouseenter', ()=>clearInterval(timer));
+  root.addEventListener('mouseleave', ()=>timer = setInterval(()=>show(idx+1), 4000));
+})();
+</script>
