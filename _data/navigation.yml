@@ -1,7 +1,31 @@
 main:
+  - title: "Home"
+    url: /
   - title: "About"
     url: /about/
+    children:
+      - title: "Bio"
+        url: /about/bio/
+  - title: "Project"
+    url: /projects/
+    children:
+      - title: "Project A"
+        url: /projects/project-a/
+      - title: "Project B"
+        url: /projects/project-b/
   - title: "Highlights"
     url: /highlights/
-  - title: "Paper Radar"
-    url: /paper-radar/
+    children:
+      - title: "Fundings"
+        url: /highlights/Fundings/
+      - title: "Awards"
+        url: /highlights/awards/
+      - title: "Conferences"
+        url: /highlights/conferences/
+  - title: "Radar"
+    url: /radar/
+    children:
+      - title: "Literature"
+        url: /radar/literature/
+      - title: "Technology"
+        url: /radar/technology/
