@@ -2,13 +2,6 @@
 # Only the main Sass file needs front matter
 ---
 
-/* 先覆盖主题变量（一定要在 @import 之前） */
-$left-sidebar-width: 320px;        /* 侧栏更宽一点，可调 320–380 */
-$right-sidebar-width: 360px;
-$gutter: 6rem;                     /* 关键：内容与侧栏之间的“缝隙” */
-
-
-
 @import "minimal-mistakes";
 
 /* --------------------------------------------
@@ -149,3 +142,24 @@ $gutter: 6rem;                     /* 关键：内容与侧栏之间的“缝隙
 .sidebar .author__avatar { width: 95% !important; }
 .sidebar .author__avatar a { width: 100% !important; }
 */
+
+/* --------------------------------------------
+   ⑤ 修正侧栏与正文间距（桌面端）
+-------------------------------------------- */
+@media (min-width: 992px) {
+  .layout--home .page__content,
+  .layout--single .page__content,
+  .layout--archive .page__content,
+  .layout--page .page__content,
+  .layout--pages .page__content {
+    margin-left: 4rem !important;   /* ← 你可以调成 5rem / 6rem 看效果 */
+  }
+}
+
+/* 移动端回归单栏布局 */
+@media (max-width: 991.98px) {
+  .page__content {
+    margin-left: 0 !important;
+  }
+}
+
