@@ -1,5 +1,10 @@
 ---
 title: "Literature"
 permalink: /radar/literature/
+layout: category
+taxonomy: literature
+sidebar:
+  nav: "sidebar"
+entries_layout: list
+show_excerpts: true
 ---
-（你的文献/技术追踪总览）
