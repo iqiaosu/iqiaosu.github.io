@@ -178,3 +178,16 @@
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+/* --- 调整底部前后导航按钮样式 --- */
+.pagination--pager {
+  font-size: 0.9rem;        /* 调整字体大小 */
+  padding: 0.3rem 1rem;     /* 调整按钮内部空间 */
+  border-radius: 6px;       /* 让圆角更柔和 */
+  background-color: #f8f9fa; /* 背景更浅更干净 */
+}
+
+.pagination--pager:hover {
+  background-color: #e9ecef;
+}
+
