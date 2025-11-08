@@ -1,7 +1,15 @@
 ---
-title: "INVITED CONFERENCE PRESENTATIONS"
+title: "CONFERENCES"
 permalink: /highlights/conferences/
+layout: single
+author_profile: false
+sidebar:
+  nav: "sidebar"
+toc: false
 ---
+
+
+
 **15th International Congress of Parasitology (ICOPA)**, Denmark, 2022  
   🎤 *Exploring albendazole resistance of human diarrheal parasite Giardia duodenalis.*
 
