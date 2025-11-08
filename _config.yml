@@ -92,6 +92,7 @@ defaults:
       comments: true
       share: true
       related: true
+
   # _pages
   - scope:
       path: "_pages"
@@ -99,6 +100,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "sidebar"   # ← 关键：所有 _pages 默认挂这棵侧栏菜单
+        expand: true     # 可选：访问父级时自动展开子菜单
 
 category_archive:
   type: liquid
@@ -106,10 +110,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-  # Hide top navigation (masthead)
-header:
-  overlay_color: "transparent"
-  show_overlay_nav: false
-  show_nav: false
-
