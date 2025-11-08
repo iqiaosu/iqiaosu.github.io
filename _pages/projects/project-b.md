@@ -1,4 +1,3 @@
-
 ---
 title: "Master"
 permalink: /projects/project-b/
