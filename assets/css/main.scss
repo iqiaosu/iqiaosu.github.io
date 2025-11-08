@@ -163,16 +163,18 @@
   }
 }
 
-/* Hide only the top-right navigation menu, keep site title visible */
-.masthead__menu {
+/* === only hide top-right nav, keep the site title === */
+.masthead .greedy-nav .visible-links,
+.masthead .greedy-nav .hidden-links,
+.masthead .greedy-nav .greedy-nav__toggle,
+.masthead .search__toggle {
   display: none !important;
 }
 
-/* Ensure site title (left side) remains visible */
-.site-title,
-.masthead__inner-wrap .site-title {
+/* make sure the left site title stays visible */
+.masthead .greedy-nav .site-title,
+.masthead .site-title {
   display: inline-block !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
-
