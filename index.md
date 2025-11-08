@@ -6,4 +6,4 @@ sidebar:
   nav: "sidebar"
 ---
 
-{% include carousel.html height="420" unit="px" duration="6" %}
+{% include carousel.html %}
