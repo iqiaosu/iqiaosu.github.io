@@ -1,7 +1,16 @@
+
 ---
 title: "Master"
 permalink: /projects/project-b/
+layout: single
+author_profile: false
+sidebar:
+  nav: "sidebar"
+toc: false
 ---
+
+
+
 ## 2014–2017 SIDEROPHORE BIOSYNTHESIS COORDINATELY MODULATED THE VIRULENCE-ASSOCIATED METABOLOME IN UROPATHOGENIC *ESCHERICHIA COLI*
 
 _Sub-project of National Natural Science Foundation of China (31670031) under the title “Discovery and functional characterization of new siderophores in pathogenic *Escherichia coli*”, led by Associate Professor **Haitao Lyu**._
