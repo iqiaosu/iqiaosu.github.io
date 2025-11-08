@@ -1,5 +1,5 @@
 ---
-title: "Bio"
+title: ""
 permalink: /about/bio/
 ---
 # QIAO SU
