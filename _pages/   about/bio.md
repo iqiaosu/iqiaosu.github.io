@@ -19,15 +19,20 @@ EMAIL: qiaosu.qs@gmail.com
 
 🚗 Road trip 📘 Reading 📸 Photography 🏀 Basketball 💃 Street dance bug ♠ Board game 🏄 Surfing rookie  
 
+<br>
 
 **University of Melbourne, Australia** | PhD Candidate, Biomedicine, 2019–2025
+<br>
 
 **Shanghai Jiao Tong University, China** | M.Sc., System Biology (visiting), 2016–2017 
+<br>
 
 **Chongqing University, China** | M.Sc., Pharmaceutical Sciences, 2014–2017  
+<br>
 
 **China Pharmaceutical University, China** | B.Sc., Pharmaceutical Marketing, 2009–2013  
 
+<br><br>
 
 From Tibet Plateau of China. Tasted flavour of pharmaceutical marketing principles then head down to pharmaceutical research to get enough knowledge of the products (mediconsider systems biology as a promising era of disease treatment. Fascinated with understanding basic biology and cine). Respect to drug development and exploring mechanisms of the disease.  
 
