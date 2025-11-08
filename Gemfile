@@ -6,5 +6,5 @@ gem "jekyll-remote-theme"
 gem "jekyll-include-cache"
 gem "webrick"
 
-# --- Fix sass compile error ---
-gem "sass-embedded", "~> 1.70"
+# --- Fix for Ruby 2.7 compatibility ---
+gem "sass-embedded", "1.69.5"   # ✅ 指定旧版支持 Ruby 2.7
