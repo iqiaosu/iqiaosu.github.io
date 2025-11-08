@@ -1,7 +1,14 @@
 ---
 title: "FUNDINGS"
 permalink: /highlights/fundings/
+layout: single
+author_profile: false
+sidebar:
+  nav: "sidebar"
+toc: false
 ---
+
+
 **Walter and Eliza Hall Institute of Medical Research (WEHI)**, Australia, 2022  
   💎 *Edith Moffatt Student Travel Scholarship*
 
