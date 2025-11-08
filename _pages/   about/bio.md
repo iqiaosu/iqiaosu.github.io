@@ -6,8 +6,6 @@ permalink: /about/bio/
 <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
   <img src="/assets/images/bio-photo.jpg" alt="Portrait of Qiao Su"
        style="width:120px; height:120px; border-radius:50%; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,.15);" />
-  <h1 style="margin:0;">QIAO SU</h1>
-</div>
 
 # QIAO SU
 <br>
