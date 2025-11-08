@@ -143,28 +143,35 @@
 .sidebar .author__avatar a { width: 100% !important; }
 */
 
-/* --------------------------------------------
-   侧栏与右侧内容“拉开距离”（仅桌面端）
-   适配 Minimal Mistakes 的常见页面类型 
--------------------------------------------- */
+/* 两列网格布局：更可控（仅桌面端） */
 @media (min-width: 992px) {
-  /* 首页、归档页、文章/页面（单页）布局的侧栏 */
+  .layout--home .page__inner-wrap,
+  .layout--archive .page__inner-wrap,
+  .layout--single .page__inner-wrap,
+  .layout--pages .page__inner-wrap {
+    display: grid !important;
+    grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+    column-gap: 48px;                /* 这里就是左右“间距” */
+    align-items: start;
+  }
+
+  /* 避免主题里对 sidebar 的 float/宽度造成影响 */
   .layout--home .sidebar,
   .layout--archive .sidebar,
   .layout--single .sidebar,
   .layout--pages .sidebar {
-    margin-right: 48px !important;   /* 想更宽改 40/48px */
-  }
-
-  /* 保险起见：确保侧栏不被主题宽度限制“顶住” */
-  .sidebar {
-    max-width: 360px;                /* 可按需调 300–360px */
+    float: none !important;
+    width: auto !important;
   }
 }
 
-/* 移动端回落为单栏：不留空隙，避免挤压正文 */
 @media (max-width: 991.98px) {
-  .sidebar {
-    margin-right: 0 !important;
+  .layout--home .page__inner-wrap,
+  .layout--archive .page__inner-wrap,
+  .layout--single .page__inner-wrap,
+  .layout--pages .page__inner-wrap {
+    display: block !important;       /* 手机端回落单列 */
   }
+}
+
 }
