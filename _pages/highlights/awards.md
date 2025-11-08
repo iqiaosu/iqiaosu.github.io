@@ -1,7 +1,15 @@
 ---
-title: "AWARDS AND PRIZES"
+title: "AWARDS"
 permalink: /highlights/awards/
+layout: single
+author_profile: false
+sidebar:
+  nav: "sidebar"
+toc: false
 ---
+
+
+
 **Parasitravaganza ASP Annual Conference**, Australia, 2022  
   🐳 *Winner of Best 5-Minute Talk Prize*
 
