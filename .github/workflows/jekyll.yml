@@ -17,12 +17,14 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-22.04          # 保持 22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+
+      - name: Setup Ruby 3.1       # ✅ 用 Ruby 3.1（支持 sass-embedded）
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: 3.1
           bundler-cache: true
 
       - name: Install dependencies
