@@ -29,8 +29,8 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -99,10 +99,10 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false      # ← 关闭左侧作者卡！
       sidebar:
-        nav: "sidebar"   # ← 关键：所有 _pages 默认挂这棵侧栏菜单
-        expand: true     # 可选：访问父级时自动展开子菜单
+        nav: "sidebar"           # ← 启用侧栏导航
+        expand: true             # ← 自动展开子菜单
 
 category_archive:
   type: liquid
