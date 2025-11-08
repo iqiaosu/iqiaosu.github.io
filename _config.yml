@@ -1,54 +1,13 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: QSystems Biology
 email: qiaosu.qs@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
+description: >-
+  A personal academic portfolio of Qiao Su — Systems Biology, Omics, and Precision Health.
 github_username: iqiaosu
 minimal_mistakes_skin: default
-search: true
+search: false
 
-# Build settings
+# --- Build settings ---
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
 remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-remote-theme
@@ -57,54 +16,48 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# --- Site output ---
+permalink: /:categories/:title/
+# 禁用分页
+# paginate: 5
+# paginate_path: /page:num/
 
+include:
+  - _pages
 
+# --- Author profile (仅用于meta，不会显示在侧栏) ---
 author:
   name   : "Qiao Su"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "BSBA *CPU*, MSc *Chongqing*, PhD *Melbourne* <br><br>🚗 Road trip <br>📘 Reading <br>📸 Photography <br>🏀 Basketball <br>💃 Street dance bug <br>♠ Board game <br>🏄 Surfing rookie"
-  email: "qiaosu.qs@gmail.com"
+  email  : "qiaosu.qs@gmail.com"
   links:
-  - label: "GitHub"
-    icon: "fab fa-github"
-    url: "https://github.com/iqiaosu"
-
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      icon: "fab fa-github"
+      url: "https://github.com/iqiaosu"
 
+# --- Defaults for posts & pages ---
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
 
-  # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: false      # ← 关闭左侧作者卡！
+      author_profile: false
       sidebar:
-        nav: "sidebar"           # ← 启用侧栏导航
-        expand: true             # ← 自动展开子菜单
+        nav: "sidebar"
+        expand: true
 
 category_archive:
   type: liquid
