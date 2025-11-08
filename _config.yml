@@ -22,6 +22,8 @@ permalink: /:categories/:title/
 # paginate: 5
 # paginate_path: /page:num/
 
+show_excerpts: true
+
 include:
   - _pages
 
@@ -68,4 +70,6 @@ tag_archive:
 
 header:
   nav: []   # 清空顶部导航
+
+
 
