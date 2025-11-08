@@ -1,4 +1,7 @@
 <div class="pdf-frame">
+  {% if include.caption %}
+  <h3 style="text-align:center; margin-top:1rem;">{{ include.caption }}</h3>
+  {% endif %}
   <iframe
     src="{{ include.file }}#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
     title="PDF Preview"
@@ -12,11 +15,11 @@
   width: 100%;
   max-width: 1200px;
   margin: 1.5rem auto;
-  border: none;
   border-radius: 12px;
   overflow: hidden;
   background: #f9fafb;
   box-shadow: 0 8px 28px rgba(0,0,0,.08);
+  padding: 0.5rem;
 }
 
 .pdf-frame iframe {
@@ -25,6 +28,7 @@
   border: none;
   display: block;
   border-radius: 12px;
+  background: #fff;
 }
 
 @media (max-width: 768px) {
