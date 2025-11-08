@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /about/bio/
+permalink: /about/skill-sets/
 ---
 
 insert figure here
