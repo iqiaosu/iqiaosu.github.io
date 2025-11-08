@@ -6,5 +6,8 @@ gem "jekyll-remote-theme"
 gem "jekyll-include-cache"
 gem "webrick"
 
-# --- Fix sass build error on GitHub Actions (Ruby 3.1) ---
+# Emoji support (required by _config.yml)
+gem "jemoji"
+
+# Fix for sass build on Ruby 3.1
 gem "sass-embedded", "1.77.2"
