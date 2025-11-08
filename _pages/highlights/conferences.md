@@ -1,5 +1,12 @@
 ---
-title: "Conferences"
+title: "INVITED CONFERENCE PRESENTATIONS"
 permalink: /highlights/conferences/
 ---
-（高光时刻总览）
+- **15th International Congress of Parasitology (ICOPA)**, Denmark, 2022  
+  🎤 *Exploring albendazole resistance of human diarrheal parasite Giardia duodenalis.*
+
+- **Parasitravaganza ASP Annual Conference**, Australia, 2022  
+  🎤 *In vitro selection of Giardia duodenalis for Albendazole resistance identifies a β-tubulin mutation at amino acid E198K.*
+
+- **5th National Conference of Pharmaceutical Analysis**, China, 2015  
+  🎤 *Pharmacometabolomic identifies siderophores as novel targets for therapeutic discovery.*
