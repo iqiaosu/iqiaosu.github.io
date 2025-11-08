@@ -1,17 +1,6 @@
----
-layout: single
-title: "Home"
-sidebar:
-  nav: "sidebar"
----
-
-{% capture slides %}
 - image: /assets/images/bio-photo.jpg
   caption: "Slide A"
 - image: /assets/images/bio-photo.jpg
   caption: "Slide B"
 - image: /assets/images/bio-photo.jpg
   caption: "Slide C"
-{% endcapture %}
-
-{% include carousel.html height="420" unit="px" duration="6" slides=slides %}
