@@ -6,27 +6,37 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04            # ← 固定 22.04，避免 sass-embedded 编译问题
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
+      - name: Setup Ruby 2.7         # ← 使用 Ruby 2.7（最稳）
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 2.7
           bundler-cache: true
 
       - name: Install dependencies
         run: |
-          bundle lock --update sass-embedded
+          gem update --system
           bundle install
 
-
       - name: Build site
-        run: bundle exec jekyll build
+        run: |
+          bundle exec jekyll build
+          echo "Jekyll build completed successfully."
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
@@ -35,10 +45,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
+    runs-on: ubuntu-22.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
