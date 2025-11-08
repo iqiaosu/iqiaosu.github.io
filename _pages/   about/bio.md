@@ -1,3 +1,13 @@
+---
+title: ""
+permalink: /about/bio/
+layout: single
+author_profile: false
+sidebar:
+  nav: "sidebar"
+---
+
+
 <div style="text-align:center; margin-bottom:1rem;">
   <img src="/assets/images/bio-photo.jpg" alt="Portrait of Qiao Su"
        style="width:300px; height:300px; border-radius:50%; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,.15); margin-bottom:0.5rem;" />
