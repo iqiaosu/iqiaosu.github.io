@@ -106,3 +106,10 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+  # Hide top navigation (masthead)
+header:
+  overlay_color: "transparent"
+  show_overlay_nav: false
+  show_nav: false
+
