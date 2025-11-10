@@ -1,4 +1,4 @@
-{% assign slides = site.data.carousel | default: [] %}
+{% assign slides = include.slides | default: site.data.carousel | default: [] %}
 <div class="qs-carousel" role="region" aria-label="Featured images">
   <div class="qs-carousel__viewport">
     {% for s in slides %}
