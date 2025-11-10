@@ -68,7 +68,7 @@
   dots.forEach((d,i)=>d.addEventListener('click', ()=>show(i)));
 
   // auto play
-  let timer = setInterval(()=>show(idx+1), 4000);
+  let timer = setInterval(()=>show(idx+1), 2500);
   root.addEventListener('mouseenter', ()=>clearInterval(timer));
   root.addEventListener('mouseleave', ()=>timer = setInterval(()=>show(idx+1), 4000));
 })();
