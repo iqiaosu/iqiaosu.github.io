@@ -11,7 +11,7 @@ toc: false
 
 ## 2019–2025 SYSTEMS-BASED APPROACHES TO UNDERSTAND INFECTION, STRESS RESPONSES AND DRUG RESISTANCE IN PARASITIC PROTISTS
 
-_Sub-project of **Australian National Health and Medical Research Foundation Leadership Fellowship program (APP1194330)** under the title “Systems-based study, intervention, diagnosis and control of gastrointestinal parasites” led by Associate Professor **Aaron Jex**._
+_Sub-project of **Australian National Health and Medical Research Foundation Leadership Fellowship program (APP1194330)** under the title “Systems-based study, intervention, diagnosis and control of gastrointestinal parasites” led by Professor **Aaron Jex**._
 
 ---
 
