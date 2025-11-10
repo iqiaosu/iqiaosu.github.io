@@ -1,6 +1,6 @@
-- image: /assets/images/bio-photo.jpg
-  caption: "Slide A"
-- image: /assets/images/bio-photo.jpg
-  caption: "Slide B"
-- image: /assets/images/bio-photo.jpg
-  caption: "Slide C"
+- image: /assets/images/slide-a.jpg
+  caption: "Functional	clusters	for	37	significant	trended	gene	sets."
+- image: /assets/images/slide-b.jpg
+  caption: "Literature-based	trend	analysis."
+- image: /assets/images/slide-c.jpg
+  caption: "Lipid	 metabolism	 of	 Giardia	 duodenalis	 and	 differentially	transcribed	markers	in	ALB-R."
