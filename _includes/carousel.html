@@ -2,10 +2,17 @@
 <div class="qs-carousel" role="region" aria-label="Featured images">
   <div class="qs-carousel__viewport">
     {% for s in slides %}
+    {% assign cap = s.caption | default: s.title %}
     <figure class="qs-slide" {% if forloop.first %}data-active{% endif %}>
-      <img src="{{ s.image | relative_url }}" alt="{{ s.caption | escape }}" loading="lazy">
-      {% if s.caption %}
-      <figcaption class="qs-caption">{{ s.caption }}</figcaption>
+      {% if s.url %}
+        <a href="{{ s.url | relative_url }}">
+          <img src="{{ s.image | relative_url }}" alt="{{ cap | escape }}" loading="lazy">
+        </a>
+      {% else %}
+        <img src="{{ s.image | relative_url }}" alt="{{ cap | escape }}" loading="lazy">
+      {% endif %}
+      {% if cap %}
+      <figcaption class="qs-caption">{{ cap }}</figcaption>
       {% endif %}
     </figure>
     {% endfor %}
