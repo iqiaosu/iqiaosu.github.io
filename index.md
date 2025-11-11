@@ -1,16 +1,16 @@
 ---
 layout: single
-title: ""
+title: "&nbsp;"                 # ← 用不换行空格覆盖回退标题
 author_profile: false
 sidebar:
   nav: "sidebar"
-excerpt: ""                          # 防止摘要文字叠到横幅上
+excerpt: ""
 header:
-  overlay_image: /assets/images/headhover-home.jpg   # ← 首页横幅图
-  overlay_filter: 0.35                                 # 深一点更显内容
-  caption: ""                                          # 可留空
-  show_overlay_title: false   # 👈 新增：隐藏横幅上的文字
+  overlay_image: /assets/images/headhover-home.jpg
+  overlay_filter: 0.35
+  caption: ""
 ---
+
 
 {% comment %}
 Combine static carousel + recent posts with images
