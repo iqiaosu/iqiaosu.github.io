@@ -1,33 +1,38 @@
-<style>
-/* --- 自定义样式：分页与元信息 --- */
+---
+layout: single
+title: "&nbsp;"                 # 防止横幅标题回退为 site.title
+author_profile: false
+sidebar:
+  nav: "sidebar"
+excerpt: ""                     # 避免摘要文字叠到横幅
+header:
+  overlay_image: /assets/images/headhover-home.jpg
+  overlay_filter: 0.35
+  caption: ""
+---
 
-/* 隐藏分类与标签栏 */
-.page__meta { display: none !important; }
+{% comment %}
+Combine static carousel + recent posts with images
+- 静态图：_data/carousel.yml
+- 动态图：从 _posts/ 中挑 front matter 里有 image 的文章，
+  且分类包含 radar / technology / woohoo / literature 任一类
+{% endcomment %}
 
-/* 底部分页按钮微调 */
-.pagination--pager{
-  font-size:.9rem;
-  padding:.3rem 1rem;
-  border-radius:6px;
-  background:#f8f9fa;
-  box-shadow:0 2px 6px rgba(0,0,0,.05);
-}
-.pagination--pager:hover{ background:#e9ecef; }
-</style>
+{% assign static_slides = site.data.carousel %}
 
-<style>
-/* --- 自定义样式：侧边栏导航 --- */
+{%- comment -%} 先取所有“有图”的文章 {%- endcomment -%}
+{% assign posts_with_image = site.posts | where_exp: "p", "p.image" %}
 
-/* 当前激活链接（保持粗体，改为 #ff00b4） */
-.nav__item a.active,
-.nav__sub-item a.active{
-  color:#ff00b4 !important;
-  font-weight:700;
-}
+{%- comment -%} 再按分类过滤 {%- endcomment -%}
+{% assign picked_posts = posts_with_image
+  | where_exp: "p", "p.categories contains 'radar' or p.categories contains 'technology' or p.categories contains 'woohoo' or p.categories contains 'literature'"
+  | sort: "date"
+  | reverse
+  | slice: 0, 6
+%}
 
-/* 悬停同色 */
-.nav__item a:hover,
-.nav__sub-item a:hover{
-  color:#ff00b4 !important;
-}
-</style>
+{%- comment -%} 合并静态图 + 动态图 {%- endcomment -%}
+{% assign slides = static_slides | concat: picked_posts %}
+
+{%- comment -%} 渲染轮播 {%- endcomment -%}
+{% include carousel.html slides=slides %}
