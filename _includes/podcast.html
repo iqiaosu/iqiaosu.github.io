@@ -1,0 +1,9 @@
+<div class="podcast" style="margin:1rem 0 1.5rem 0;">
+  <audio controls preload="none" style="width:100%;max-width:800px;display:block;margin:0 auto;">
+    <source src="{{ include.src }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  {% if include.caption %}
+  <p style="text-align:center;margin:.5rem 0 0 0;opacity:.75;">{{ include.caption }}</p>
+  {% endif %}
+</div>
