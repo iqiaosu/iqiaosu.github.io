@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Home"
+title: ""
 author_profile: false
 sidebar:
   nav: "sidebar"
