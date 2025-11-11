@@ -1,5 +1,5 @@
 ---
-title: "AWARDS"
+title: "Science: where small victories taste like Nobel Prizes."
 permalink: /highlights/awards/
 layout: single
 author_profile: false
