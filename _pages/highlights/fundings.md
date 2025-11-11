@@ -1,5 +1,5 @@
 ---
-title: "FUNDINGS"
+title: "Love is optional, funding is inevitable."
 permalink: /highlights/fundings/
 layout: single
 author_profile: false
