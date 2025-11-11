@@ -33,3 +33,24 @@
   color:#ff00b4 !important;
 }
 </style>
+
+<style>
+/* Sidebar active link = #ff00b4（兼容多种标记方式） */
+.sidebar .nav__list .nav__item.current > a,
+.sidebar .nav__list .nav__sub-item.current > a,
+.sidebar .nav__list .nav__item > a.active,
+.sidebar .nav__list .nav__sub-item > a.active,
+.sidebar .nav__list a[aria-current="page"],
+.sidebar .nav__list a[aria-current="true"],
+.sidebar .nav__list .current > a {
+  color: #ff00b4 !important;
+  font-weight: 700 !important;
+}
+
+/* 悬停/已访问 同色 */
+.sidebar .nav__list a:hover,
+.sidebar .nav__list a:visited:hover {
+  color: #ff00b4 !important;
+}
+</style>
+
