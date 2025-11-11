@@ -5,6 +5,10 @@ layout: single
 author_profile: false
 sidebar:
   nav: "sidebar"
+header:
+  overlay_image: /assets/images/headhover-bio.jpg
+  overlay_filter: 0.25
+  caption: ""
 ---
 
 
