@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "&nbsp;"                 # ← 阻止回退为 site.title
 permalink: /about/bio/
 layout: single
 author_profile: false
@@ -10,6 +10,7 @@ header:
   overlay_filter: 0.25
   caption: ""
 ---
+
 
 
 <div style="text-align:center; margin-bottom:1rem;">
