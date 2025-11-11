@@ -1,5 +1,5 @@
 ---
-title: "SKILL SETS"
+title: "Skilled in pipetting, panicking, and pretending to understand statistics."
 permalink: /about/skill-sets/
 layout: single
 sidebar:
