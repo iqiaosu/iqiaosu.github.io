@@ -6,6 +6,10 @@ author_profile: false
 sidebar:
   nav: "sidebar"
 toc: false
+header:
+  overlay_image: /assets/images/headhover-fundings.jpg
+  overlay_filter: 0.25
+  caption: ""
 ---
 
 
