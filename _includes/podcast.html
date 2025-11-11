@@ -1,6 +1,17 @@
 <div class="podcast" style="margin:1rem 0 1.5rem 0;">
-  <audio controls preload="none" style="width:100%;max-width:800px;display:block;margin:0 auto;">
-    <source src="{{ include.src }}" type="audio/mpeg">
+  <audio controls preload="metadata" style="width:100%;max-width:800px;display:block;margin:0 auto;">
+    {% if include.src_opus %}
+      <source src="{{ include.src_opus }}" type="audio/ogg; codecs=opus">
+    {% endif %}
+    {% if include.src_m4a %}
+      <source src="{{ include.src_m4a }}" type="audio/mp4">
+    {% endif %}
+    {% if include.src_mp3 %}
+      <source src="{{ include.src_mp3 }}" type="audio/mpeg">
+    {% endif %}
+    {% if include.src and not include.src_mp3 and not include.src_m4a and not include.src_opus %}
+      <source src="{{ include.src }}" type="audio/mpeg">
+    {% endif %}
     Your browser does not support the audio element.
   </audio>
   {% if include.caption %}
