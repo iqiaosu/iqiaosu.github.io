@@ -1,5 +1,5 @@
 <style>
-/* --- 自定义样式，控制分页与元信息 --- */
+/* --- 自定义样式：分页与元信息 --- */
 
 /* 隐藏分类与标签栏 */
 .page__meta {
@@ -14,23 +14,52 @@
   background-color: #f8f9fa;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-
 .pagination--pager:hover {
   background-color: #e9ecef;
 }
 </style>
 
 <style>
-/* 侧边栏当前激活链接的颜色（默认是黑色粗体） */
+/* --- 自定义样式：侧边栏导航 --- */
+
+/* 当前激活链接的颜色（默认是黑色粗体） */
 .nav__sub-item a.active,
 .nav__item a.active {
   color: #ff00b4 !important;
   font-weight: 700; /* 保留粗体 */
 }
 
-/* 悬停时也可统一 */
+/* 悬停时颜色 */
 .nav__sub-item a:hover,
 .nav__item a:hover {
   color: #ff00b4 !important;
+}
+</style>
+
+<style>
+/* --- 自定义样式：横幅和顶栏 --- */
+
+/* 让顶部导航栏透明，横幅顶上去 */
+.masthead,
+.masthead__inner-wrap {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 横幅贴顶（按视觉微调 -3.0rem ~ -4.0rem） */
+.page__hero--overlay {
+  margin-top: -3.5rem;
+  border-radius: 0 !important;
+}
+
+/* 顶部站点名在横幅上显示白色（提高可读性） */
+.site-title a {
+  color: #fff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,.35);
+}
+
+/* 隐藏横幅文字（例如 "QSystems Biology"） */
+.page__hero--overlay .page__title {
+  display: none !important;
 }
 </style>
