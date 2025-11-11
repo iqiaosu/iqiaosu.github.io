@@ -1,5 +1,5 @@
 ---
-title: "CONFERENCES"
+title: "Innovation runs on caffeine, curiosity, and conversations."
 permalink: /highlights/conferences/
 layout: single
 author_profile: false
