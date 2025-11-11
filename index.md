@@ -9,6 +9,7 @@ header:
   overlay_image: /assets/images/headhover-home.jpg   # ← 首页横幅图
   overlay_filter: 0.35                                 # 深一点更显内容
   caption: ""                                          # 可留空
+  show_overlay_title: false   # 👈 新增：隐藏横幅上的文字
 ---
 
 {% comment %}
