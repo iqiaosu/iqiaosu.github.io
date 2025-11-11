@@ -4,6 +4,10 @@ permalink: /about/skill-sets/
 layout: single
 sidebar:
   nav: "sidebar"
+header:
+  overlay_image: /assets/images/headhover-skillsets.jpg
+  overlay_filter: 0.25
+  caption: ""
 ---
 <div class="skill-image-wrapper">
   <img src="/assets/images/skill-sets.png" alt="Skill Sets and Proficiency Levels">
